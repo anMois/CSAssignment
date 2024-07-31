@@ -76,9 +76,10 @@ namespace List
             Console.Clear();
             Console.WriteLine("인벤토리 현 상황");
             Console.WriteLine("-----------------");
-            foreach (Item item in items)
+            
+            for (int i = 0; i < items.Capacity; i++)
             {
-                Console.WriteLine($" {item.name}");
+
             }
         }
     }
